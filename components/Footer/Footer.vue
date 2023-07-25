@@ -103,12 +103,12 @@
 </style>
 
 <script>
-import { ref } from 'vue';
-import { useI18n } from 'vue-i18n';
-import { useSwitchLocalePath } from 'vue-i18n-routing';
-import { setRtl } from '@/composables/uiTheme';
-import logo from '@/assets/images/mobile-logo.svg'
-import brand from '@/assets/text/brand'
+import {ref} from "vue";
+import {useI18n} from "vue-i18n";
+import {useSwitchLocalePath} from "vue-i18n-routing";
+import {setRtl} from "@/composables/uiTheme";
+import logo from "@/assets/images/mobile-logo.svg";
+import brand from "@/assets/text/brand";
 
 export default {
   setup() {
@@ -123,14 +123,14 @@ export default {
       lang.value = locale;
 
       // Set RTL and Document attr
-      document.documentElement.setAttribute('lang', locale);
+      document.documentElement.setAttribute("lang", locale);
 
-      if (locale === 'ar' or locale === 'fa') {
+      if (locale === "ar" || locale === "fa") {
         setRtl(true);
-        document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute("dir", "rtl");
       } else {
         setRtl(false);
-        document.documentElement.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute("dir", "ltr");
       }
     }
 
@@ -143,48 +143,48 @@ export default {
   data: () => ({
     logo,
     brand,
-    lang: 'en',
+    lang: "en",
     footers: [
       {
-        title: 'Company',
-        description: ['Team', 'History', 'Contact us', 'Locations'],
-        link: ['#team', '#history', '#contact-us', '#locations']
+        title: "Company",
+        description: ["Team", "History", "Contact us", "Locations"],
+        link: ["#team", "#history", "#contact-us", "#locations"],
       },
       {
-        title: 'Resources',
+        title: "Resources",
         description: [
-          'Resource',
-          'Resource name',
-          'Another resource',
-          'Final resource'
+          "Resource",
+          "Resource name",
+          "Another resource",
+          "Final resource",
         ],
         link: [
-          '#resource',
-          '#resource-name',
-          '#another-resource',
-          '#final-resource'
-        ]
+          "#resource",
+          "#resource-name",
+          "#another-resource",
+          "#final-resource",
+        ],
       },
       {
-        title: 'Legal',
-        description: ['Privacy policy', 'Terms of use'],
-        link: ['#privacy-policy', '#terms-of-use']
-      }
-    ]
+        title: "Legal",
+        description: ["Privacy policy", "Terms of use"],
+        link: ["#privacy-policy", "#terms-of-use"],
+      },
+    ],
   }),
   props: {
     invert: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   computed: {
     isDesktop() {
-      const mdUp = this.$vuetify.display.mdAndUp
+      const mdUp = this.$vuetify.display.mdAndUp;
       return mdUp;
     },
     isMobile() {
-      const smDown = this.$vuetify.display.smAndDown
+      const smDown = this.$vuetify.display.smAndDown;
       return smDown;
     },
     langList() {
@@ -192,11 +192,14 @@ export default {
       const i18n = this.$i18n.locales;
 
       i18n.map((locale) => {
-        list.push({ title: this.$t('common.' + locale.code), value: locale.code });
+        list.push({
+          title: this.$t("common." + locale.code),
+          value: locale.code,
+        });
         return false;
       });
       return list;
     },
   },
-}
+};
 </script>

@@ -74,10 +74,10 @@
 </style>
 
 <script>
-import { ref, onMounted } from 'vue';
-import { useI18n } from 'vue-i18n';
-import { useSwitchLocalePath } from 'vue-i18n-routing';
-import { toggleDark, setRtl } from '@/composables/uiTheme';
+import {ref, onMounted} from "vue";
+import {useI18n} from "vue-i18n";
+import {useSwitchLocalePath} from "vue-i18n-routing";
+import {toggleDark, setRtl} from "@/composables/uiTheme";
 
 export default {
   props: {
@@ -96,7 +96,7 @@ export default {
 
     onMounted(() => {
       isLoaded.value = true;
-      isDark.value = localStorage.getItem('luxiDarkMode') === 'dark';
+      isDark.value = localStorage.getItem("luxiDarkMode") === "dark";
     });
 
     function switchDark() {
@@ -106,14 +106,14 @@ export default {
 
     function switchRtl(locale) {
       // Set RTL and Document attr
-      document.documentElement.setAttribute('lang', locale);
+      document.documentElement.setAttribute("lang", locale);
 
-      if (locale === 'ar' or locale === 'fa') {
+      if (locale === "ar" || locale === "fa") {
         setRtl(true);
-        document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute("dir", "rtl");
       } else {
         setRtl(false);
-        document.documentElement.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute("dir", "ltr");
       }
     }
 
