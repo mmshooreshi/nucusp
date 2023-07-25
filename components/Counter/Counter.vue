@@ -1,32 +1,24 @@
 <template>
-  <div
-    ref="wrapper"
-    v-scroll="runCounter"
-    class="counter-wrap"
-  >
+  <div ref="wrapper" v-scroll="runCounter" class="counter-wrap">
     <v-container class="max-md">
-      <v-row
-        justify="center"
-        align="center"
-        class="counter-inner spacing6"
-      >
+      <v-row justify="center" align="center" class="counter-inner spacing6">
         <v-col md="4" class="px-6">
           <div class="counter-item">
             <div v-if="loaded" class="text">
               <h3 class="use-text-title">
                 <span>
-                  {{ !visible ? 0 : '' }}
+                  {{ !visible ? 0 : "" }}
                   <count-up
                     v-if="visible"
                     :start-val="0"
                     :end-val="200"
-                    :options="{ suffix: 'M' }"
+                    :options="{suffix: 'M'}"
                   />
                 </span>
               </h3>
               <p class="use-text-subtitle">
                 <i class="ion-ios-cloud-download-outline" />
-                {{ $t('mobileLanding.counter_downloads') }}
+                {{ $t("mobileLanding.counter_downloads") }}
               </p>
             </div>
           </div>
@@ -36,18 +28,18 @@
             <div v-if="loaded" class="text">
               <h3 class="use-text-title">
                 <span>
-                  {{ !visible ? 0 : '' }}
+                  {{ !visible ? 0 : "" }}
                   <count-up
                     v-if="visible"
                     :start-val="0"
                     :end-val="480"
-                    :options="{ prefix: '+', suffix: 'M' }"
+                    :options="{prefix: '+', suffix: 'M'}"
                   />
                 </span>
               </h3>
               <p class="use-text-subtitle">
                 <i class="ion-ios-checkmark-circle-outline" />
-                {{ $t('mobileLanding.counter_transaction') }}
+                {{ $t("mobileLanding.counter_transaction") }}
               </p>
             </div>
           </div>
@@ -57,18 +49,18 @@
             <div v-if="loaded" class="text">
               <h3 class="use-text-title">
                 <span>
-                  {{ !visible ? 0 : '' }}
+                  {{ !visible ? 0 : "" }}
                   <count-up
                     v-if="visible"
                     :start-val="0"
                     :end-val="180"
-                    :options="{ prefix: '+', suffix: 'M' }"
+                    :options="{prefix: '+', suffix: 'M'}"
                   />
                 </span>
               </h3>
               <p class="use-text-subtitle">
                 <i class="ion-ios-star-outline" />
-                {{ $t('mobileLanding.counter_ratting') }}
+                {{ $t("mobileLanding.counter_rating") }}
               </p>
             </div>
           </div>
@@ -79,12 +71,12 @@
 </template>
 
 <style lang="scss" scoped>
-@import './counter-style.scss';
+@import "./counter-style.scss";
 </style>
 
 <script>
-import CountUp from 'vue-countup-v3';
-import { ref } from 'vue';
+import CountUp from "vue-countup-v3";
+import {ref} from "vue";
 
 export default {
   components: {
@@ -110,13 +102,13 @@ export default {
   },
   data() {
     return {
-      loaded: false
-    }
+      loaded: false,
+    };
   },
   mounted() {
     setTimeout(() => {
-      this.loaded = true
-    }, 200)
-  }
-}
+      this.loaded = true;
+    }, 200);
+  },
+};
 </script>
