@@ -46,7 +46,7 @@
     "ar": "العربية",
     "notif_msg": "Bu, ziyaretçilere veya kullanıcılara önemli bilgileri iletmek için yaygın olarak kullanılan bir mesaj örneğidir. Lütfen bu mesajı kapatmak için yanındaki düğmeye tıklayın."
   },
-  "landing": {
+  "mobileLanding": {
     "header_language": "Dil",
     "header_theme": "Tema Modu",
     "header_dark": "Karanlık",
