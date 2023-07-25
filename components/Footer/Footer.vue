@@ -1,17 +1,10 @@
 <template>
-  <footer class="footer" :class="{ invert: invert }">
+  <footer class="footer" :class="{invert: invert}">
     <v-container class="max-lg">
       <v-row class="spacing4">
-        <v-col
-          class="pa-4"
-          md="3"
-          cols="12"
-        >
+        <v-col class="pa-4" md="3" cols="12">
           <div class="logo">
-            <img
-              :src="logo"
-              alt="logo"
-            >
+            <img :src="logo" alt="logo" />
             <h6 class="use-text-subtitle2 font-weight-bold">
               {{ brand.mobile.projectName }}
             </h6>
@@ -21,11 +14,7 @@
             {{ brand.mobile.footerText }}
           </p>
         </v-col>
-        <v-col
-          class="px-6 py-0"
-          md="6"
-          cols="12"
-        >
+        <v-col class="px-6 py-0" md="6" cols="12">
           <v-expansion-panels
             v-if="isMobile"
             :dark="!invert"
@@ -43,10 +32,7 @@
               </v-expansion-panel-title>
               <v-expansion-panel-text>
                 <ul>
-                  <li
-                    v-for="(item, index) in footer.description"
-                    :key="index"
-                  >
+                  <li v-for="(item, index) in footer.description" :key="index">
                     <nuxt-link :to="footer.link[index]">
                       {{ item }}
                     </nuxt-link>
@@ -60,17 +46,14 @@
               v-for="(footer, index) in footers"
               :key="index"
               sm="3"
-              cols="12"     
+              cols="12"
               class="px-4 site-map-item"
             >
               <h6 class="title-nav">
                 {{ footer.title }}
               </h6>
               <ul>
-                <li
-                  v-for="(item, index) in footer.description"
-                  :key="index"
-                >
+                <li v-for="(item, index) in footer.description" :key="index">
                   <nuxt-link :to="footer.link[index]">
                     {{ item }}
                   </nuxt-link>
@@ -79,38 +62,18 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col
-          md="3"
-          cols="12"
-          class="pa-4"
-        >
+        <v-col md="3" cols="12" class="pa-4">
           <div class="socmed">
-            <v-btn
-              text
-              icon
-              class="button"
-            >
+            <v-btn text icon class="button">
               <span class="ion-logo-facebook icon" />
             </v-btn>
-            <v-btn
-              text
-              icon
-              class="button"
-            >
-              <span class="ion-logo-twitter  icon" />
+            <v-btn text icon class="button">
+              <span class="ion-logo-twitter icon" />
             </v-btn>
-            <v-btn
-              text
-              icon
-              class="button"
-            >
+            <v-btn text icon class="button">
               <span class="ion-logo-instagram icon" />
             </v-btn>
-            <v-btn
-              text
-              icon
-              class="button"
-            >
+            <v-btn text icon class="button">
               <span class="ion-logo-linkedin icon" />
             </v-btn>
           </div>
@@ -136,7 +99,7 @@
 </template>
 
 <style scoped lang="scss">
-@import './footer-style';
+@import "./footer-style";
 </style>
 
 <script>
@@ -162,7 +125,7 @@ export default {
       // Set RTL and Document attr
       document.documentElement.setAttribute('lang', locale);
 
-      if (locale === 'ar') {
+      if (locale === 'ar' or locale === 'fa') {
         setRtl(true);
         document.documentElement.setAttribute('dir', 'rtl');
       } else {

@@ -5,10 +5,10 @@
     location="bottom"
     class="ma-0"
   >
-    <template #activator="{ props }">
+    <template #activator="{props}">
       <div class="setting">
         <v-btn
-          :class="{ invert: invert, active: open }"
+          :class="{invert: invert, active: open}"
           v-bind="props"
           icon="mdi-cog"
         />
@@ -16,11 +16,13 @@
     </template>
     <v-list class="popover ocean-var">
       <div class="mode-menu">
-        <v-list-subheader>{{ $t('mobileLanding.header_theme') }}</v-list-subheader>
+        <v-list-subheader>{{
+          $t("mobileLanding.header_theme")
+        }}</v-list-subheader>
         <v-list-item>
           <div class="flex-menu">
             <span>
-              {{ $t('mobileLanding.header_light') }}
+              {{ $t("mobileLanding.header_light") }}
             </span>
             <v-switch
               :model-value="isDark"
@@ -30,14 +32,16 @@
               @change="switchDark()"
             />
             <span>
-              {{ $t('mobileLanding.header_dark') }}
+              {{ $t("mobileLanding.header_dark") }}
             </span>
           </div>
         </v-list-item>
       </div>
       <v-divider />
       <div class="lang-menu">
-        <v-list-subheader>{{ $t('mobileLanding.header_language') }}</v-list-subheader>
+        <v-list-subheader>{{
+          $t("mobileLanding.header_language")
+        }}</v-list-subheader>
         <v-list-item
           v-for="(lang, index) in langList"
           :key="index"
@@ -52,13 +56,10 @@
             </v-avatar>
           </template>
           <v-list-item-title class="lang-opt">
-            {{ $t('common.'+lang.code) }}
+            {{ $t("common." + lang.code) }}
           </v-list-item-title>
           <template #append>
-            <v-icon
-              v-if="lang.code === curLang"
-              color="primary"
-            >
+            <v-icon v-if="lang.code === curLang" color="primary">
               mdi-check
             </v-icon>
           </template>
@@ -69,7 +70,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import './header-style.scss';
+@import "./header-style.scss";
 </style>
 
 <script>
@@ -107,7 +108,7 @@ export default {
       // Set RTL and Document attr
       document.documentElement.setAttribute('lang', locale);
 
-      if (locale === 'ar') {
+      if (locale === 'ar' or locale === 'fa') {
         setRtl(true);
         document.documentElement.setAttribute('dir', 'rtl');
       } else {
