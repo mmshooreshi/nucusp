@@ -1,11 +1,11 @@
 const brand = {
   mobile: {
-    name: "Mobile",
+    name: "Nucusp",
     desc: "Nucusp",
     prefix: "Nucusp",
     footerText: "Nucusp Company",
     logoText: "Nucusp co.",
-    projectName: "Mobile",
+    projectName: "Nucusp",
     url: "nucusp.com/mobile",
     img: "/images/mobile-logo.png",
     notifMsg: "...",
