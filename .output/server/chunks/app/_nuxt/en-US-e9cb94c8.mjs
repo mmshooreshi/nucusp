@@ -1,160 +1,168 @@
-const trTR = {
+const enUS = {
   "common": {
     "title": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["NuCusp'a Ho\u015F Geldiniz!"]);
+      return _normalize(["Welcome to NuCusp!"]);
     },
     "subtitle": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Di\u015F Hekimli\u011Fi Uygulaman\u0131z\u0131n Ger\xE7ek Potansiyelini Ke\u015Ffedin"]);
+      return _normalize(["Unlocking the True Potential of Your Dental Practice"]);
     },
     "error_with_status": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Oops! Sunucumuzda bir hata olu\u015Ftu."]);
+      return _normalize(["Oops! An error occurred on our server."]);
     },
     "404": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Sayfa Bulunamad\u0131"]);
+      return _normalize(["Page Not Found"]);
     },
     "404_subtitle": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Ya burada kal\u0131n ya da ba\u015Fa d\xF6n\xFCn."]);
+      return _normalize(["Either stay here or go back to the beginning."]);
     },
     "back": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Ana Sayfaya D\xF6n"]);
+      return _normalize(["Back to Home"]);
     },
     "error_without_status": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Oops! Sunucumuzda bir hata olu\u015Ftu."]);
+      return _normalize(["Oops! An error occurred on our server."]);
     },
     "contact_title": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["\u0130leti\u015Fime Ge\xE7in"]);
+      return _normalize(["Get in Touch"]);
     },
     "contact_title2": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Bize Ula\u015F\u0131n"]);
+      return _normalize(["Reach out to us"]);
     },
     "contact_subtitle": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Sorular\u0131n\u0131z m\u0131 var? Bize mesaj b\u0131rakmaktan \xE7ekinmeyin. Sizinle ileti\u015Fime ge\xE7mekten mutluluk duyar\u0131z."]);
+      return _normalize(["Do you have any questions or inquiries? We'd love to hear from you. Simply drop us a message."]);
     },
     "form_name": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["\u0130sim *"]);
+      return _normalize(["Name *"]);
     },
     "form_email": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["E-posta Adresi *"]);
+      return _normalize(["Email Address *"]);
     },
     "form_phone": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Telefon Numaras\u0131"]);
+      return _normalize(["Phone Number"]);
     },
     "form_company": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["\u015Eirket"]);
+      return _normalize(["Company"]);
     },
     "form_message": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Mesaj"]);
+      return _normalize(["Message"]);
     },
     "form_terms": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Bu formu g\xF6ndererek,"]);
+      return _normalize(["By submitting this form, I agree to the"]);
     },
     "form_privacy": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Hizmet \u015Eartlar\u0131 ve Gizlilik Politikas\u0131n\u0131 kabul ediyorum."]);
+      return _normalize(["Terms of Service and Privacy Policy."]);
     },
     "form_send": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Mesaj G\xF6nder"]);
+      return _normalize(["Send Message"]);
     },
     "login": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Giri\u015F Yap"]);
+      return _normalize(["Log In"]);
     },
     "login_create": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Yeni Hesap Olu\u015Ftur"]);
+      return _normalize(["Create New Account"]);
     },
     "login_or": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Veya e-posta ile giri\u015F yap\u0131n"]);
+      return _normalize(["Or log in with email"]);
     },
     "login_email": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["E-posta"]);
+      return _normalize(["Email"]);
     },
     "login_password": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Parola"]);
+      return _normalize(["Password"]);
     },
     "login_remember": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Beni Hat\u0131rla"]);
+      return _normalize(["Remember Me"]);
     },
     "login_forgot": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Parolam\u0131 Unuttum"]);
+      return _normalize(["Forgot Password"]);
     },
     "continue": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Devam Et"]);
+      return _normalize(["Continue"]);
     },
     "login_title": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Tekrar Ho\u015F Geldiniz"]);
+      return _normalize(["Welcome Back"]);
     },
     "login_subtitle": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Devam etmek i\xE7in l\xFCtfen giri\u015F yap\u0131n"]);
+      return _normalize(["Please log in to proceed"]);
     },
     "register": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Kaydol"]);
+      return _normalize(["Register"]);
     },
     "register_already": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Zaten bir hesab\u0131n\u0131z var m\u0131?"]);
+      return _normalize(["Already have an account?"]);
     },
     "register_or": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Veya e-posta ile kaydolun"]);
+      return _normalize(["Or register with email"]);
     },
     "register_name": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["\u0130sim *"]);
+      return _normalize(["Name *"]);
     },
     "register_email": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["E-posta Adresi *"]);
+      return _normalize(["Email Address *"]);
     },
     "register_password": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Parola"]);
+      return _normalize(["Password"]);
     },
     "register_confirm": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Parolay\u0131 Onayla"]);
+      return _normalize(["Confirm Password"]);
     },
     "register_title": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Tan\u0131\u015Ft\u0131\u011F\u0131m\u0131za Memnun Olduk :)"]);
+      return _normalize(["Nice to Meet You :)"]);
     },
     "register_subtitle": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Kat\u0131lmak i\xE7in sadece kaydolun"]);
+      return _normalize(["Just register to join us"]);
     },
     "accept": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Kabul Et"]);
+      return _normalize(["Accept"]);
     },
     "en": (ctx) => {
       const { normalize: _normalize } = ctx;
       return _normalize(["English"]);
+    },
+    "fa": (ctx) => {
+      const { normalize: _normalize } = ctx;
+      return _normalize(["Persian"]);
+    },
+    "tr": (ctx) => {
+      const { normalize: _normalize } = ctx;
+      return _normalize(["Turkish"]);
     },
     "de": (ctx) => {
       const { normalize: _normalize } = ctx;
@@ -178,160 +186,160 @@ const trTR = {
     },
     "notif_msg": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Bu, ziyaret\xE7ilere veya kullan\u0131c\u0131lara \xF6nemli bilgileri iletmek i\xE7in yayg\u0131n olarak kullan\u0131lan bir mesaj \xF6rne\u011Fidir. L\xFCtfen bu mesaj\u0131 kapatmak i\xE7in yan\u0131ndaki d\xFC\u011Fmeye t\u0131klay\u0131n."]);
+      return _normalize(["This is an example of a commonly used message to convey important information to visitors or users. Please click the button beside to close this message."]);
     }
   },
-  "landing": {
+  "mobileLanding": {
     "header_language": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Dil"]);
+      return _normalize(["Language"]);
     },
     "header_theme": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Tema Modu"]);
+      return _normalize(["Theme Mode"]);
     },
     "header_dark": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Karanl\u0131k"]);
+      return _normalize(["Dark"]);
     },
     "header_light": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Ayd\u0131nl\u0131k"]);
+      return _normalize(["Light"]);
     },
     "header_feature": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["\xD6zellikler"]);
+      return _normalize(["Features"]);
     },
     "header_showcase": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Ba\u015Far\u0131 Hikayeleri"]);
+      return _normalize(["Showcase"]);
     },
     "header_testimonials": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Referanslar"]);
+      return _normalize(["Testimonials"]);
     },
     "header_faq": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["SSS"]);
+      return _normalize(["FAQ"]);
     },
     "header_contact": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["\u0130leti\u015Fim"]);
+      return _normalize(["Contact"]);
     },
     "banner_title": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["NuCusp'a Ho\u015F Geldiniz!"]);
+      return _normalize(["Welcome to NuCusp!"]);
     },
     "banner_titlestrong": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Di\u015F Hekimli\u011Fi Uygulaman\u0131z\u0131n Ger\xE7ek Potansiyelini Ke\u015Ffedin"]);
+      return _normalize(["Unlocking the True Potential of Your Dental Practice"]);
     },
     "banner_desc": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Teknoloji ve yarat\u0131c\u0131 stratejiler ile di\u015F hekimli\u011Fi sekt\xF6r\xFCn\xFC devrimle\u015Ftiriyoruz."]);
+      return _normalize(["Revolutionizing the dental industry through technology and creative strategies."]);
     },
     "counter_downloads": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["\u0130ndirmeler"]);
+      return _normalize(["Downloads"]);
     },
     "counter_transaction": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["\u0130\u015Flemler"]);
+      return _normalize(["Transactions"]);
     },
     "counter_rating": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["De\u011Ferlendirmeler"]);
+      return _normalize(["Ratings"]);
     },
     "feature_title": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Hizmetlerimiz"]);
+      return _normalize(["Our Services"]);
     },
     "feature_title1": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Di\u015F Hekimli\u011Fi Chatbotlar\u0131"]);
+      return _normalize(["Dental Chatbots"]);
     },
     "feature_desc1": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Di\u015F hekimli\u011Fi alan\u0131na \xF6zel olarak tasarlanm\u0131\u015F Chatbotlar\u0131m\u0131zla uygulaman\u0131z\u0131 konu\u015Fma tabanl\u0131 yap\u0131n. Hastalarla ileti\u015Fimi art\u0131r\u0131n, randevu planlamalar\u0131n\u0131 kolayla\u015Ft\u0131r\u0131n ve an\u0131nda di\u015F hekimli\u011Fi dan\u0131\u015Fmanl\u0131\u011F\u0131 sunun."]);
+      return _normalize(["Immerse your practice in the power of conversational AI. Enhance patient communication, streamline appointments, and provide instant dental advice with our specialized dental chatbots."]);
     },
     "feature_title2": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Sosyal Medya Y\xF6netimi"]);
+      return _normalize(["Social Media Management"]);
     },
     "feature_desc2": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["\xC7evrimi\xE7i varl\u0131\u011F\u0131n\u0131z\u0131 en \xFCst d\xFCzeye \xE7\u0131kar\u0131n ve sosyal medyan\u0131n potansiyelinden yararlan\u0131n. Uzman ekibimiz, sosyal medya pazarlamas\u0131 ve etkile\u015Fim i\xE7in hedef odakl\u0131 stratejiler ve yapay zeka destekli \xE7\xF6z\xFCmler sunar."]);
+      return _normalize(["Maximize your online presence and leverage the potential of social media. Our expert team delivers targeted strategies and AI-backed solutions for social media marketing and engagement."]);
     },
     "feature_title3": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["\xC7evrimi\xE7i Varl\u0131k Geli\u015Ftirme"]);
+      return _normalize(["Online Presence Enhancement"]);
     },
     "feature_desc3": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Dijital d\xFCnyada fark yarat\u0131n. Web sitenizi optimize edin, SEO stratejileri kullan\u0131n ve sa\u011Fl\u0131k sekt\xF6r\xFCnde \xE7evrimi\xE7i itibar\u0131n\u0131z\u0131 y\xF6netin."]);
+      return _normalize(["Stand out in the digital realm with our holistic online presence enhancement services. Optimize your website, employ SEO strategies, and manage your online reputation within the healthcare industry."]);
     },
     "feature_title4": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["G\xF6rsel \u0130\xE7erik Olu\u015Fturma"]);
+      return _normalize(["Visual Content Creation"]);
     },
     "feature_desc4": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Sa\u011Fl\u0131k profesyonelleri i\xE7in \xF6zel olarak tasarlanm\u0131\u015F \xE7arp\u0131c\u0131 g\xF6rsel i\xE7eriklerle dikkat \xE7ekin. Yarat\u0131c\u0131 ekibimiz, grafikler, videolar ve infografikler gibi g\xF6rsel hikayelerle uzmanl\u0131\u011F\u0131n\u0131z\u0131 iletecek ve hastalar\u0131 \xE7e\u015Fitli platformlarda etkileyecektir."]);
+      return _normalize(["Capture attention with stunning visual content tailored exclusively for healthcare professionals. Our creative team specializes in crafting visually compelling graphics, videos, and infographics."]);
     },
     "feature_title5": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Sosyal Medya Pazarlamas\u0131"]);
+      return _normalize(["Social Media Marketing"]);
     },
     "feature_desc5": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Sa\u011Fl\u0131k profesy onellerine \xF6zel olarak tasarlanm\u0131\u015F sosyal medya pazarlamas\u0131n\u0131n g\xFCc\xFCn\xFC ortaya \xE7\u0131kar\u0131n. Stratejik kampanyalar\u0131m\u0131zla eri\u015Fiminizi optimize edin, yeni hastalar \xE7ekin ve ger\xE7ek sonu\xE7lar elde edin."]);
+      return _normalize(["Unleash the power of social media marketing tailored specifically for healthcare professionals. Our strategic campaigns optimize your reach, attract new patients, and drive results."]);
     },
     "feature_title6": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Web Sitesi Entegrasyonu"]);
+      return _normalize(["Website Integration"]);
     },
     "feature_desc6": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Web sitenizi sosyal medya platformlar\u0131yla entegre ederek hastalar\u0131n\u0131za sorunsuz bir dijital deneyim sunun. Marka kimli\u011Finizi g\xFC\xE7lendirin ve kullan\u0131c\u0131 dostu bir yolculuk sa\u011Flay\u0131n."]);
+      return _normalize(["Create a seamless digital experience for your patients by integrating your website with social media platforms. Strengthen your brand identity and provide a user-friendly journey."]);
     },
     "feature_title7": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Sosyal Medya Etkile\u015Fimi"]);
+      return _normalize(["Social Media Engagement"]);
     },
     "feature_desc7": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Kapsaml\u0131 sosyal medya etkile\u015Fim stratejilerimizle aktif ve geli\u015Fen bir \xE7evrimi\xE7i topluluk olu\u015Fturun. Anlaml\u0131 etkile\u015Fimleri destekleyin ve hasta memnuniyetini art\u0131r\u0131n."]);
+      return _normalize(["Cultivate an active online community through our comprehensive social media engagement strategies. Foster meaningful interactions and enhance patient satisfaction."]);
     },
     "showcase_title": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Ba\u015Far\u0131 Hikayeleri"]);
+      return _normalize(["Success Stories"]);
     },
     "faq_subtitle": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Sorular\u0131n\u0131z m\u0131 var? Cevaplar ve bilgiler i\xE7in s\u0131k\xE7a sorulan sorulara g\xF6z at\u0131n."]);
+      return _normalize(["Have questions? Check out our frequently asked questions for answers and insights."]);
     },
     "testimonial_title": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Referanslar"]);
+      return _normalize(["Testimonials"]);
     },
     "company_title": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["D\xFCnya Genelinde G\xFCvenilir Di\u015F Hekimlerinin Tercihi"]);
+      return _normalize(["Trusted by Dental Professionals Worldwide"]);
     },
     "news_title": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Son Haberler"]);
+      return _normalize(["Latest News"]);
     },
     "news_desc": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["En son haberlerimiz ve yakla\u015Fan etkinlikler hakk\u0131nda daha fazla bilgi edinin."]);
+      return _normalize(["Read more about our latest news and upcoming events."]);
     },
     "footer_text": (ctx) => {
       const { normalize: _normalize } = ctx;
-      return _normalize(["Di\u015F hekimli\u011Fi uygulaman\u0131z\u0131n ger\xE7ek potansiyelini ke\u015Ffetmeye haz\u0131r m\u0131s\u0131n\u0131z? Bug\xFCn bizimle ileti\u015Fime ge\xE7in!"]);
+      return _normalize(["Ready to unlock the true potential of your dental practice? Get in touch with us today!"]);
     }
   }
 };
 
-export { trTR as default };
-//# sourceMappingURL=tr-TR-ee4984c8.mjs.map
+export { enUS as default };
+//# sourceMappingURL=en-US-e9cb94c8.mjs.map

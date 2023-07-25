@@ -9,13 +9,13 @@ const client_manifest = {
     "file": "Notification.ee6b3c0d.css",
     "src": "Notification.css"
   },
-  "_Large.7bc687db.js": {
+  "_Large.8263cdce.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "Large.a7f39440.css"
     ],
-    "file": "Large.7bc687db.js",
+    "file": "Large.8263cdce.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.6.5_eslint@7.32.0+sass@1.64.1/node_modules/nuxt/dist/app/entry.js"
     ]
@@ -24,13 +24,13 @@ const client_manifest = {
     "file": "Large.a7f39440.css",
     "resourceType": "style"
   },
-  "_Notification.02e211ea.js": {
+  "_Notification.f84a6621.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "Notification.ee6b3c0d.css"
     ],
-    "file": "Notification.02e211ea.js",
+    "file": "Notification.f84a6621.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.6.5_eslint@7.32.0+sass@1.64.1/node_modules/nuxt/dist/app/entry.js"
     ]
@@ -60,21 +60,21 @@ const client_manifest = {
   "lang/en-US.json": {
     "resourceType": "script",
     "module": true,
-    "file": "en-US.a473b2d7.js",
+    "file": "en-US.777607c2.js",
     "isDynamicEntry": true,
     "src": "lang/en-US.json"
   },
   "lang/fa-IR.json": {
     "resourceType": "script",
     "module": true,
-    "file": "fa-IR.794c9999.js",
+    "file": "fa-IR.d40359ec.js",
     "isDynamicEntry": true,
     "src": "lang/fa-IR.json"
   },
   "lang/tr-TR.json": {
     "resourceType": "script",
     "module": true,
-    "file": "tr-TR.cb5ab88e.js",
+    "file": "tr-TR.81ced8df.js",
     "isDynamicEntry": true,
     "src": "lang/tr-TR.json"
   },
@@ -87,7 +87,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "default.8f34ad25.js",
+    "file": "default.c0ce4737.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.6.5_eslint@7.32.0+sass@1.64.1/node_modules/nuxt/dist/app/entry.js"
     ],
@@ -146,7 +146,7 @@ const client_manifest = {
       "lang/fa-IR.json",
       "lang/tr-TR.json"
     ],
-    "file": "entry.a1459910.js",
+    "file": "entry.eadb0abd.js",
     "isEntry": true,
     "src": "node_modules/.pnpm/nuxt@3.6.5_eslint@7.32.0+sass@1.64.1/node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true
@@ -189,10 +189,10 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "blank-page.20511811.js",
+    "file": "blank-page.c62c4147.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.6.5_eslint@7.32.0+sass@1.64.1/node_modules/nuxt/dist/app/entry.js",
-      "_Notification.02e211ea.js"
+      "_Notification.f84a6621.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/blank-page.vue"
@@ -210,10 +210,10 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "contact.612baeda.js",
+    "file": "contact.430ebac4.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.6.5_eslint@7.32.0+sass@1.64.1/node_modules/nuxt/dist/app/entry.js",
-      "_Large.7bc687db.js"
+      "_Large.8263cdce.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/contact.vue"
@@ -231,11 +231,11 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "index.1166a91a.js",
+    "file": "index.a18630ae.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.6.5_eslint@7.32.0+sass@1.64.1/node_modules/nuxt/dist/app/entry.js",
-      "_Large.7bc687db.js",
-      "_Notification.02e211ea.js"
+      "_Large.8263cdce.js",
+      "_Notification.f84a6621.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"

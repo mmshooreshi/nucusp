@@ -2972,15 +2972,15 @@ function useSwitchLocalePath({
 const localeCodes = ["en", "fa", "tr"];
 const localeMessages = {
   "en": [{ key: "../lang/en-US.json", load: () => import(
-    './_nuxt/en-US-74190fb0.mjs'
+    './_nuxt/en-US-e9cb94c8.mjs'
     /* webpackChunkName: "lang_en_US_json_en_US_json" */
   ) }],
   "fa": [{ key: "../lang/fa-IR.json", load: () => import(
-    './_nuxt/fa-IR-ab883ba4.mjs'
+    './_nuxt/fa-IR-1deb4dbe.mjs'
     /* webpackChunkName: "lang_fa_IR_json_fa_IR_json" */
   ) }],
   "tr": [{ key: "../lang/tr-TR.json", load: () => import(
-    './_nuxt/tr-TR-ee4984c8.mjs'
+    './_nuxt/tr-TR-c37ef683.mjs'
     /* webpackChunkName: "lang_tr_TR_json_tr_TR_json" */
   ) }]
 };
